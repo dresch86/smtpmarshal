@@ -1,0 +1,10 @@
+# Node JS
+node_modules/
+
+# Config
+config.js
+config.*.js
+!config.sample.js
+
+# PNPM
+pnpm-debug.log
