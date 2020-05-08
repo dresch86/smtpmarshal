@@ -12,9 +12,7 @@ export default class GoogleAdminClient {
             keyId: gConfig.credentials.private_key_id,
             scopes: 
             [
-                'https://www.googleapis.com/auth/drive',
                 'https://www.googleapis.com/auth/gmail.send',
-                'https://www.googleapis.com/auth/spreadsheets',
                 'https://www.googleapis.com/auth/admin.directory.user.readonly',
                 'https://www.googleapis.com/auth/admin.directory.group.readonly'
             ],
