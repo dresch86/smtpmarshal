@@ -26,9 +26,10 @@ const server = new SMTPServer(smtpCfg);
 
 server.on('error', err => {
     Logger.error(err.message);
+    process.exit();
 });
 
 server.listen(appCfg.server.port, appCfg.server.address, () => {
-    Logger.trace('SMTP Marshal Listening...');
+    Logger.info('SMTP Marshal Listening...');
     console.log('SMTP Marshal Listening...');
 });

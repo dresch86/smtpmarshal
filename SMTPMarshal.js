@@ -49,8 +49,15 @@ export default class SMTPMarshal {
     }
 
     async onMailFrom(address, session, callback) {
-        Logger.info('Mail accepted from sender [' + address.address + ']');
-        return callback();
+        // Username and fromAddress should be the same to avoid spoofed message errors
+        if (address.address == session.user) {
+            Logger.info('Mail accepted from sender [' + address.address + ']');
+            return callback();
+        } else {
+            let sError = 'Mail rejected from sender [' + address.address + '] due to authentication mismatch [' + session.user + ']';
+            Logger.warn(sError);
+            return callback(new Error(sError));
+        }
     }
 
     onData(stream, session, callback) {
