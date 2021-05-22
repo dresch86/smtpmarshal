@@ -9,6 +9,12 @@ log4js.configure({
     pm2: appCfg.logging.pm2
 });  
 
+global.Base64 = {
+    encode: function(str) {
+      return Buffer.from(str).toString('base64');
+    },
+};
+
 const Logger = log4js.getLogger('SMTPMarshal');
 const SMTPController = new SMTPMarshal(appCfg);
 
