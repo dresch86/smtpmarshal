@@ -109,7 +109,10 @@ export default class SMTPMarshal {
                             if (conDBHandle) conDBHandle.rollback();
                             Logger.error(error.message);
                         } finally {
-                            if (conDBHandle) conDBHandle.release();
+                            if (conDBHandle) {
+                                conDBHandle.release();
+                            }
+
                             Logger.trace('Connection released');
                         }
                         
