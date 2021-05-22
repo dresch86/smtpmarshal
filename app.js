@@ -13,6 +13,9 @@ global.Base64 = {
     encode: function(str) {
       return Buffer.from(str).toString('base64');
     },
+    encodeURI: function(str) {
+        return Buffer.from(str).toString('base64');
+    }
 };
 
 const Logger = log4js.getLogger('SMTPMarshal');
