@@ -19,7 +19,7 @@
   "dependencies": {
     "googleapis": "^73.0.0",
     "js-base64": "^3.6.0",
-    "log4js": "^6.3.0",
+    "log4js": "^6.9.1",
     "luxon": "^1.27.0",
     "mariadb": "^3.5.1",
     "mysql-import": "^5.0.26",

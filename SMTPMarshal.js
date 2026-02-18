@@ -1,9 +1,12 @@
-import * as log4js from 'log4js';
 import { createPool } from 'mariadb';
+import { createRequire } from 'module';
 
 import MailGovernor from './utilities/MailGovernor.js';
 import GoogleUserClient from './utilities/GoogleUserClient.js';
 import GoogleAdminClient from './utilities/GoogleAdminClient.js';
+
+const require = createRequire(import.meta.url);
+const log4js = require('log4js');
 
 const Logger = log4js.getLogger('SMTPMarshal');
 
