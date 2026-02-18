@@ -1,8 +1,11 @@
-import * as log4js from 'log4js';
+import { createRequire } from 'module';
 import { SMTPServer } from 'smtp-server';
 
 import * as appCfg from './config.js';
 import SMTPMarshal from './SMTPMarshal.js';
+
+const require = createRequire(import.meta.url);
+const log4js = require('log4js');
 
 log4js.configure({
     appenders: { main: { type: 'file', filename: appCfg.logging.path } },
