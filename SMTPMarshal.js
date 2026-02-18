@@ -1,5 +1,5 @@
-import mariadb from 'mariadb';
 import * as log4js from 'log4js';
+import { createPool } from 'mariadb';
 
 import MailGovernor from './utilities/MailGovernor.js';
 import GoogleUserClient from './utilities/GoogleUserClient.js';
@@ -16,7 +16,7 @@ export default class SMTPMarshal {
         this.appConfig = cfg;
         this.gcGoogleAdminHandler = new GoogleAdminClient();
 
-        this.dbpDBPool = mariadb.createPool({
+        this.dbpDBPool = createPool({
             host: this.appConfig.db.host, 
             database: this.appConfig.db.name,
             user: this.appConfig.db.user, 
