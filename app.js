@@ -1,7 +1,7 @@
 import { createRequire } from 'module';
 import { SMTPServer } from 'smtp-server';
 
-import * as appCfg from './config.js';
+import appCfg from './config.js';
 import SMTPMarshal from './SMTPMarshal.js';
 
 const require = createRequire(import.meta.url);

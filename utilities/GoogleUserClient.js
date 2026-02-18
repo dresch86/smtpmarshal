@@ -1,5 +1,5 @@
 import { google } from 'googleapis';
-import * as gConfig from '../config.js';
+import gConfig from '../config.js';
 
 export default class GoogleUserClient {
     userEmail = '';
