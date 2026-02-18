@@ -1,6 +1,6 @@
 import { Base64 } from 'js-base64';
 import { google } from 'googleapis';
-import * as gConfig from '../config';
+import * as gConfig from '../config.js';
 
 export default class GoogleAdminClient {
     jwtAdminKey = null;
