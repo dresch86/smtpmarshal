@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     domain: "mydomain.com",
     adminEmail: "info@mydomain.com",
     adminName: "System Admin",

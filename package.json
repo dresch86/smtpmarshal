@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "An SMTP event handler to pass email off to the Gmail API",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "test": "node -r esm test/client.js",
     "server": "node -r esm app.js",
@@ -16,14 +17,13 @@
   "author": "Daniel J. Resch",
   "license": "mit",
   "dependencies": {
-    "esm": "^3.2.25",
     "googleapis": "^73.0.0",
     "js-base64": "^3.6.0",
     "log4js": "^6.3.0",
     "luxon": "^1.27.0",
-    "mariadb": "^2.5.3",
-    "mysql-import": "^5.0.21",
-    "nodemailer": "^6.6.0",
-    "smtp-server": "^3.8.0"
+    "mariadb": "^3.5.1",
+    "mysql-import": "^5.0.26",
+    "nodemailer": "^8.0.1",
+    "smtp-server": "^3.18.1"
   }
 }

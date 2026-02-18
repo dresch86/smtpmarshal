@@ -1,7 +1,8 @@
 import * as log4js from 'log4js';
-import * as appCfg from './config';
-import SMTPMarshal from './SMTPMarshal';
 import { SMTPServer } from 'smtp-server';
+
+import * as appCfg from './config.js';
+import SMTPMarshal from './SMTPMarshal.js';
 
 log4js.configure({
     appenders: { main: { type: 'file', filename: appCfg.logging.path } },

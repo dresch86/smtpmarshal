@@ -1,8 +1,9 @@
 import mariadb from 'mariadb';
 import * as log4js from 'log4js';
-import MailGovernor from './utilities/MailGovernor';
-import GoogleUserClient from './utilities/GoogleUserClient';
-import GoogleAdminClient from './utilities/GoogleAdminClient';
+
+import MailGovernor from './utilities/MailGovernor.js';
+import GoogleUserClient from './utilities/GoogleUserClient.js';
+import GoogleAdminClient from './utilities/GoogleAdminClient.js';
 
 const Logger = log4js.getLogger('SMTPMarshal');
 
