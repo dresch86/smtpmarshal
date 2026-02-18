@@ -29,6 +29,9 @@ importers:
       nodemailer:
         specifier: ^8.0.1
         version: 8.0.1
+      punycode:
+        specifier: ^2.3.1
+        version: 2.3.1
       smtp-server:
         specifier: ^3.18.1
         version: 3.18.1
@@ -295,6 +298,10 @@ packages:
 
   punycode.js@2.3.1:
     resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
+    engines: {node: '>=6'}
+
+  punycode@2.3.1:
+    resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
   qs@6.15.0:
@@ -646,6 +653,8 @@ snapshots:
   object-inspect@1.13.4: {}
 
   punycode.js@2.3.1: {}
+
+  punycode@2.3.1: {}
 
   qs@6.15.0:
     dependencies:
