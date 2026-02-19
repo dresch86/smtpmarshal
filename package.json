@@ -17,13 +17,16 @@
   "author": "Daniel J. Resch",
   "license": "mit",
   "dependencies": {
-    "googleapis": "^73.0.0",
+    "@googleapis/gmail": "^16.1.1",
+    "googleapis": "^171.4.0",
+    "install": "^0.13.0",
     "js-base64": "^3.6.0",
     "log4js": "^6.9.1",
     "luxon": "^1.27.0",
     "mariadb": "^3.5.1",
     "mysql-import": "^5.0.26",
     "nodemailer": "^8.0.1",
+    "npm": "^11.10.0",
     "smtp-server": "^3.18.1"
   }
 }
